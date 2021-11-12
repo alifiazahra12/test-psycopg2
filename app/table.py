@@ -4,7 +4,6 @@ from db import db_connect, db_cursor
 def create_tables():
     command = (
         """
-        DROP TABLE "test" IF EXISTS;
         CREATE TABLE test (
             test_id INTEGER PRIMARY KEY,
             test_name VARCHAR(255) NOT NULL
